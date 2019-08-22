@@ -1,0 +1,55 @@
+*,
+*:before,
+*:after{
+  box-sizing:border-box;
+}
+h1 {
+  font-family: 'Open Sans';
+  font-weight: 800;
+  font-style: normal;
+}
+
+
+h2 {
+  font-family: 'Open Sans';
+  font-weight: 700;
+  font-style: normal;
+}
+
+body, html, button {
+  font-family: 'Open Sans';
+  
+}
+
+body, html {
+  font-weight: normal;
+  font-style: normal;
+  width: 100%;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 2em;
+}
+
+.page-subtitle {
+  text-align: center;
+  font-size: 1.7em;
+}
+
+
+.footer {
+  display:flex;
+  flex-direction: column;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  background-color: #01B5B7;  
+  width: 100%;
+  padding: 1em .5em 1em;
+  color: #fff;
+  font-size: 0.8em;
+}
+
