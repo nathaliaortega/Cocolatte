@@ -10,6 +10,7 @@
   -webkit-filter: blur(2px);
   position: relative;
 }
+
 .featureSection{
   text-align: center;
 }
@@ -24,6 +25,9 @@
   }
   .feature__description{
     font-size: 1.5em;
+  }
+  .LandingSection__img{
+    height: 820px;
   }
 }
 .card-container {
