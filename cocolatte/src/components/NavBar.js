@@ -25,8 +25,10 @@ class NavBar extends Component {
                     <MenuLink label="Inicio" to="/inicio" activeOnlyWhenExact={false}></MenuLink>
                     <MenuLink label="Historia" to="/achievements" activeOnlyWhenExact={false}></MenuLink>             
                     <MenuLink label="Productos" to="/achievements" activeOnlyWhenExact={false}></MenuLink>             
-                    <MenuLink label="Línea Institucional" to="/achievements" activeOnlyWhenExact={false}></MenuLink>             
+                    <MenuLink label="Suscripciones" to="/achievements" activeOnlyWhenExact={false}></MenuLink>             
+                    <MenuLink label="Línea Institucional" to="/achievements" activeOnlyWhenExact={false}></MenuLink>      
                     <MenuLink label="Contáctanos" to="/achievements" activeOnlyWhenExact={false}></MenuLink>             
+
                     
                 </ul>
             </nav>

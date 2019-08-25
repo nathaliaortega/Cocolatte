@@ -1,0 +1,46 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+.LandingSection__img {
+    width: 100%;
+    max-height: 1920px;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+
+.LandingSection {
+    width: 100%;
+    display: flex;
+    align-content: center;
+}
+
+.landingSection__bienvenidos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.landingSection__bienvenidos-img {
+    width: 60%;
+    position: absolute;
+    top: 15%;
+    left: 20%;
+}
+
+.landingSection__bienvenidos-title {
+    font-family: 'Dancing Script', cursive;
+    position: absolute;
+    font-size: 15em;
+    color: white;
+    left: 15%;
+    text-shadow: 1px 1px 2px black, 0 0 4em grey;
+}
+
+@media only screen and (max-width: 650px) {
+    .landingSection__bienvenidos-img {
+        top: 10%;
+        left: 20%;
+    }
+    
+}

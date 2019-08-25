@@ -1,0 +1,31 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+.HistorySection__img {
+    width: 100%;
+    max-height: 1920px;
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+}
+
+.HistorySection {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.history__title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.2em;
+    color: white;
+    padding: 10px;
+    position: absolute;
+}
+
+@media only screen and (min-width:992px) {
+    .history__title {
+        font-size: 4em;
+    }
+}

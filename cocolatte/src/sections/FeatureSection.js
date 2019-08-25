@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../styles/SinglePage.css';
+import '../styles/FeatureSection.css';
 import DescriptionContainer from '../containers/DescriptionContainer';
 import award from '../resources/award.png';
 import colombia from '../resources/colombia.png';

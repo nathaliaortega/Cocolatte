@@ -2,6 +2,8 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/NavBar'
+import './resources/fonts/stylesheet.css';
+import './resources/fonts/stylesheetDance.css';
 
 
 import { HashRouter, Route, Switch, Redirect } from 'react-router-dom';
@@ -22,7 +24,7 @@ function App() {
           
         </Switch>
         <div className="footer">
-          Copyright © 2019 UpCluster. All Rights Reserved.
+          Copyright © 2019 Coclatte. All Rights Reserved.
         </div>
       </div>
     </HashRouter>
