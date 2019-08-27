@@ -7,46 +7,80 @@ import { NavLink } from 'react-router-dom'
 import { Link, animateScroll as scroll } from "react-scroll";
 import HistorySection from '../sections/HistorySection';
 class NavBar extends Component {
-    state = {
-        className: 'nav-bar',
-      };
-    
-      listenScrollEvent = e => {
-        if (window.scrollY > 180) {
-          this.setState({className: 'nav-bar color'})
-        } else {
-          this.setState({className: 'nav-bar'})
-        }
+  state = {
+    className: 'nav-bar',
+    classNameLinkIncio: 'nav-item__Link',
+    classNameLinkHistory: 'nav-item__Link',
+    classNameLinkContact: 'nav-item__Link',
+
+  };
+
+  listenScrollEvent = e => {
+    if (window.scrollY > 180) {
+      this.setState({ className: 'nav-bar nav-bar-color' });
+      if (window.scrollY > 1000) {
+        this.setState({ classNameLinkIncio: 'nav-item__Link' });
+        this.setState({ classNameLinkHistory: 'nav-item__Link nav-item__Link-color' });
+        this.setState({ classNameLinkContact: 'nav-item__Link' });
       }
-    
-      componentDidMount() {
-        const menuIcon = document.getElementById('menu-icon');
-        const menuContent = document.getElementById('menu-content');
-        menuIcon.addEventListener('click', () => {
-            menuContent.classList.toggle('active');
-        });
-        window.addEventListener('scroll', this.listenScrollEvent)
+      if (window.scrollY > 1370) {
+        this.setState({ classNameLinkIncio: 'nav-item__Link' });
+        this.setState({ classNameLinkContact: 'nav-item__Link nav-item__Link-color' });
+        this.setState({ classNameLinkHistory: 'nav-item__Link' });
       }
-    
-    render() {
-        return (
-            <nav className={this.state.className}>
-                <div className="logo-container">
-                    
-                    <img src={Logo} alt="Logo" className="logo"></img>
-                    <i className="fas fa-bars fa-2x" id="menu-icon"></i>
-                </div>
-                <ul className='nav-item-cont' id="menu-content">
-                    <Link to="LandingSection" className="nav-item__Link">Inicio</Link>
-                    <Link to="historySection" className="nav-item__Link">Historia</Link>
-                    <Link to="historySection" className="nav-item__Link">Productos</Link>           
-                    <Link to="historySection" className="nav-item__Link">Suscripciones</Link>           
-                    <Link to="historySection" className="nav-item__Link">Línea Institucional</Link>           
-                    <Link to="ContactSection" className="nav-item__Link">Contáctanos</Link>           
-                </ul>
-           </nav>
-        );
     }
+    else {
+      this.setState({ className: 'nav-bar' });
+      this.setState({ classNameLinkIncio: 'nav-item__Link nav-item__Link-color' });
+      this.setState({ classNameLinkHistory: 'nav-item__Link' });
+      this.setState({ classNameLinkContact: 'nav-item__Link' });
+    }
+  }
+
+  componentDidMount() {
+    const menuIcon = document.getElementById('menu-icon');
+    const menuContent = document.getElementById('menu-content');
+    const menuLink = document.getElementsByClassName('nav-item__Link');
+    menuIcon.addEventListener('click', () => {
+      menuContent.classList.toggle('active');
+      for (var i = 0; i < menuLink.length; i++) {
+        menuLink[i].classList.toggle('animated');
+        menuLink[i].classList.toggle('fadeInUp');
+      }
+      menuIcon.classList.toggle('animated');
+      menuIcon.classList.toggle('fadeInRight');
+      menuIcon.classList.toggle('fa-times');
+    });
+    for (var i = 0; i < menuLink.length; i++) {
+      menuLink[i].onclick = function () {
+        menuContent.classList.remove('active');
+        menuIcon.classList.remove('fa-times');
+      }
+    }
+
+
+    window.addEventListener('scroll', this.listenScrollEvent)
+  }
+
+  render() {
+    return (
+      <nav className={this.state.className}>
+        <div className="logo-container">
+          <img src={Logo} alt="Logo" className="logo"></img>
+          <i className="fas fa-bars fa-2x" id="menu-icon"></i>
+
+        </div>
+        <ul className='nav-item-cont' id="menu-content">
+          <Link to="LandingSection" smooth={true} duration={250} className={this.state.classNameLinkIncio}>Inicio</Link>
+          <Link to="historySection" smooth={true} duration={250} className={this.state.classNameLinkHistory}>Historia</Link>
+          <Link to="historySection" smooth={true} duration={250} className="nav-item__Link">Productos</Link>
+          <Link to="historySection" smooth={true} duration={250} className="nav-item__Link">Suscripciones</Link>
+          <Link to="historySection" smooth={true} duration={250} className="nav-item__Link">Línea Institucional</Link>
+          <Link to="ContactSection" smooth={true} duration={250} className={this.state.classNameLinkContact}>Contáctanos</Link>
+        </ul>
+      </nav>
+    );
+  }
 }
 
 
