@@ -2,10 +2,10 @@
 import React from 'react';
 import '../styles/DescriptionContainer.css'
 
-const DescriptionContainer = ({ srcImage, title }) => {
+const DescriptionContainer = ({ srcImage, title,link }) => {
 
     return(
-        <div className = "card" >
+        <a href={link} target="_blank"><div className = "card" >
             <div className="card__thumb">
                 <img src={srcImage} alt="Profile" />
             </div>
@@ -17,7 +17,7 @@ const DescriptionContainer = ({ srcImage, title }) => {
                 </header>
                
             </div>
-        </div >
+        </div ></a>
     );    
 }
 

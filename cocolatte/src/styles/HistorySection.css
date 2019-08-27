@@ -12,8 +12,9 @@
 .HistorySection {
     width: 100%;
     display: flex;
-    align-content: center;
     justify-content: center;
+    position: relative;
+    padding-top:40px;
 }
 
 .history__title {
@@ -28,4 +29,20 @@
     .history__title {
         font-size: 4em;
     }
+}
+.history__carousel
+{
+    display:flex;
+    position: absolute;
+    width:100%;
+    top:85%;
+}
+.history__card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: .5rem;
+    justify-items: center;
+    color: white;
+    width: 100%;
+    
 }
