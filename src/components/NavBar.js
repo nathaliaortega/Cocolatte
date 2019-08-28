@@ -2,10 +2,11 @@
 import React, { Component } from 'react';
 import '../styles/NavBar.css';
 import Logo from '../resources/logoBlanco-xs.png';
-import { Route, Switch, Redirect } from 'react-router-dom';
+import {Link as LinkRoute, BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 import { NavLink } from 'react-router-dom'
 import { Link, animateScroll as scroll } from "react-scroll";
 import HistorySection from '../sections/HistorySection';
+import SinglePage from '../pages/SinglePage';
 class NavBar extends Component {
   state = {
     className: 'nav-bar',
@@ -64,11 +65,14 @@ class NavBar extends Component {
 
   render() {
     return (
-      <nav className={this.state.className}>
+      <Router>
+         <nav className={this.state.className}>
         <div className="logo-container">
-          <img src={Logo} alt="Logo" className="logo"></img>
+          <LinkRoute to={"/inicio"}>
+            <img src={Logo} alt="Logo" className="logo"></img>
+          </LinkRoute>          
+          
           <i className="fas fa-bars fa-2x" id="menu-icon"></i>
-
         </div>
         <ul className='nav-item-cont' id="menu-content">
           <Link to="LandingSection" smooth={true} duration={250} className={this.state.classNameLinkIncio}>Inicio</Link>
@@ -79,6 +83,9 @@ class NavBar extends Component {
           <Link to="ContactSection" smooth={true} duration={250} className={this.state.classNameLinkContact}>Contáctanos</Link>
         </ul>
       </nav>
+        <Route exact path="/inicio" component={SinglePage} />
+      </Router>
+     
     );
   }
 }
