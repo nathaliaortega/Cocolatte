@@ -2,10 +2,9 @@
 import React, { Component } from 'react';
 import '../styles/NavBar.css';
 import Logo from '../resources/logoBlanco-xs.png';
-import {Link as LinkRoute, BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
-import { NavLink } from 'react-router-dom'
-import { Link, animateScroll as scroll } from "react-scroll";
-import HistorySection from '../sections/HistorySection';
+import {Link as LinkRoute, BrowserRouter as Router, Route } from 'react-router-dom';
+import { Link} from "react-scroll";
+
 import SinglePage from '../pages/SinglePage';
 class NavBar extends Component {
   state = {

@@ -1,10 +1,8 @@
-import React, { Component } from 'react';
+
+import React from 'react';
 import '../styles/HistorySection.css';
-import bienvenidos from '../resources/FondoBienvenidos.png';
 import Carousel from 'react-bootstrap/Carousel';
-import DescriptionContainer from '../containers/DescriptionContainer';
-import instagram from '../resources/instagram.png';
-import wpp from '../resources/wpp.png';
+
 
 const HistorySection = ({ srcImage }) => {
 

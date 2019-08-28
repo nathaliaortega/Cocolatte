@@ -7,7 +7,7 @@ const DescriptionContainer = ({ srcImage, title,link }) => {
     return(
         <a href={link} target="_blank"><div className = "card" >
             <div className="card__thumb">
-                <img src={srcImage} alt="Profile" />
+                <img src={srcImage} rel="noopener noreferrer" alt="Profile" />
             </div>
             <div className="card__content">
                 <header className="content__header">
