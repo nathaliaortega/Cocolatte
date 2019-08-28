@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1dee32a0a900c31eb6089d18dd0b1222",
+    "revision": "a960909aa0d937eae14a0942e2098cbb",
     "url": "/Cocolatte/index.html"
   },
   {
-    "revision": "794facc8191c8646845b",
-    "url": "/Cocolatte/static/css/main.2450e757.chunk.css"
+    "revision": "42b4fe181ba34af64780",
+    "url": "/Cocolatte/static/css/main.c1121b25.chunk.css"
   },
   {
-    "revision": "91a212dda9a3e90c84de",
-    "url": "/Cocolatte/static/js/2.5e88ce3e.chunk.js"
+    "revision": "76f80045a594e07c1403",
+    "url": "/Cocolatte/static/js/2.f0db6446.chunk.js"
   },
   {
-    "revision": "794facc8191c8646845b",
-    "url": "/Cocolatte/static/js/main.cac0ead7.chunk.js"
+    "revision": "42b4fe181ba34af64780",
+    "url": "/Cocolatte/static/js/main.18083eb0.chunk.js"
   },
   {
     "revision": "ac364bed3bcff7943ccc",
@@ -34,10 +34,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "5bce28875925bf58944c33ec9a6bc74a",
     "url": "/Cocolatte/static/media/DancingScript-Regular.5bce2887.woff"
-  },
-  {
-    "revision": "807d7444b6c864467baaba48830b0508",
-    "url": "/Cocolatte/static/media/FondoBienvenidos.807d7444.png"
   },
   {
     "revision": "6860fa24edbdd54a819776d0e488e71f",
