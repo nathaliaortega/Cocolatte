@@ -23,7 +23,7 @@ class NavBar extends Component {
         this.setState({ classNameLinkHistory: 'nav-item__Link nav-item__Link-color' });
         this.setState({ classNameLinkContact: 'nav-item__Link' });
       }
-      if (window.scrollY > 1370) {
+      if (window.scrollY > 1480) {
         this.setState({ classNameLinkIncio: 'nav-item__Link' });
         this.setState({ classNameLinkContact: 'nav-item__Link nav-item__Link-color' });
         this.setState({ classNameLinkHistory: 'nav-item__Link' });

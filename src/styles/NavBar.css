@@ -39,11 +39,7 @@
     border-radius: 5px;
 }
 
-.nav-item__Link:hover{
-    background-color:#01B5B7;
-    border-radius: 10px;
 
-}
 .nav-item-cont {
     display: flex;
     padding: 0;
@@ -65,9 +61,15 @@
     float:left;
     width:100%;
 }
+@media(hover: hover) and (pointer: fine) {
+    .nav-item__Link:hover{
+        background-color:#01B5B7;
+        border-radius: 10px;
+    
+    }
+}
 
 @media only screen and (max-width: 895px) {
-    /*shows elements in a column*/
     
     .nav-bar {
         flex-direction: column;   
