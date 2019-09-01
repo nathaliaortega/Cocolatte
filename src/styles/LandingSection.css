@@ -5,14 +5,19 @@
 .LandingSection__img {
     width: 100%;
     max-height: 1920px;
-    filter: blur(2px);
-    -webkit-filter: blur(2px);
+    
 }
 
 .LandingSection {
     width: 100%;
     display: flex;
     align-content: center;
+    background-image: url("../resources/FondoTmpBlur.jpg");
+    background-position: center;
+    background-size: cover;  
+    padding-top:100px;    
+    height:100vh;     
+
 }
 
 .landingSection__bienvenidos {
@@ -22,10 +27,10 @@
 }
 
 .landingSection__bienvenidos-img {
-    width: 60%;
+    width: 70%;
     position: absolute;
-    top: 15%;
-    left: 20%;
+    top: 25%;
+    left: 15%;    
 }
 
 .landingSection__bienvenidos-title {
@@ -39,8 +44,8 @@
 
 @media only screen and (max-width: 650px) {
     .landingSection__bienvenidos-img {
-        top: 10%;
-        left: 20%;
+        top: 40%;
+        left: 15%;
     }
     
 }

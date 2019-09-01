@@ -8,7 +8,7 @@ const HistorySection = ({ srcImage }) => {
 
     return (
         <div className="HistorySection" id="historySection">
-            <img src={srcImage} className="HistorySection__img"></img>
+            
             <p className="history__title"><b>Nuestra Historia</b></p>
             <Carousel className="history__carousel">
                 <Carousel.Item>

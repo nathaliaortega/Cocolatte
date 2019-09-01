@@ -66,13 +66,13 @@ class NavBar extends Component {
     return (
       <Router>
          <nav className={this.state.className}>
-        <div className="logo-container">
+        
           <LinkRoute to={"/inicio"}>
             <img src={Logo} alt="Logo" className="logo"></img>
           </LinkRoute>          
           
           <i className="fas fa-bars fa-2x" id="menu-icon"></i>
-        </div>
+        
         <ul className='nav-item-cont' id="menu-content">
           <Link to="LandingSection" smooth={true} duration={250} className={this.state.classNameLinkIncio}>Inicio</Link>
           <Link to="historySection" smooth={true} duration={250} className={this.state.classNameLinkHistory}>Historia</Link>
