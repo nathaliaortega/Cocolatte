@@ -3,7 +3,7 @@ import React from 'react';
 import '../styles/SinglePage.css';
 import LandingSection from '../sections/LandingSection';
 import FeatureSection from '../sections/FeatureSection';
-import Background from '../resources/coffeNew.jfif'
+import Background from '../resources/Foto 14.jpg'
 import HistorySection from '../sections/HistorySection';
 import ContactSection from '../sections/ContactSection';
 import CoffeBack from '../resources/coffeeGrain-Blur.jpg'
