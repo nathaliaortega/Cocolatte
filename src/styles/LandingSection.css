@@ -49,3 +49,11 @@
     }
     
 }
+@media only screen and (min-width: 850px) {
+    .landingSection__bienvenidos-img {
+        top: 20%;
+        left: 20%;
+        width:60%;
+    }
+    
+}
