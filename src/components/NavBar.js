@@ -67,7 +67,7 @@ class NavBar extends Component {
       <Router>
          <nav className={this.state.className}>
         
-          <LinkRoute to={"/inicio"}>
+          <LinkRoute to={"/inicio"} onClick={ refreshPage }>
             <img src={Logo} alt="Logo" className="logo"></img>
           </LinkRoute>          
           
@@ -87,6 +87,9 @@ class NavBar extends Component {
      
     );
   }
+}
+function refreshPage(){ 
+  window.location.reload(); 
 }
 
 
