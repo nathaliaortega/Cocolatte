@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ce3f14956033130a8d8863980f752ee8",
+    "revision": "d058bd92fca30a13364220d88a5b077a",
     "url": "/Cocolatte/index.html"
   },
   {
-    "revision": "04ddbf9e2054e169bd91",
-    "url": "/Cocolatte/static/css/main.80b94f96.chunk.css"
+    "revision": "4b710234db8c52eb6472",
+    "url": "/Cocolatte/static/css/main.5e342ca3.chunk.css"
   },
   {
-    "revision": "76f80045a594e07c1403",
-    "url": "/Cocolatte/static/js/2.f0db6446.chunk.js"
+    "revision": "c3300b87b78b01afe679",
+    "url": "/Cocolatte/static/js/2.43a1f8a6.chunk.js"
   },
   {
-    "revision": "04ddbf9e2054e169bd91",
-    "url": "/Cocolatte/static/js/main.1a8afb4e.chunk.js"
+    "revision": "4b710234db8c52eb6472",
+    "url": "/Cocolatte/static/js/main.148b914b.chunk.js"
   },
   {
     "revision": "ac364bed3bcff7943ccc",
@@ -40,8 +40,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Cocolatte/static/media/FondoTitulo.bc7f696e.png"
   },
   {
-    "revision": "f73d4f5bdd9fe4791a73d030b9f1e9f5",
-    "url": "/Cocolatte/static/media/FondoTmpBlur.f73d4f5b.jpg"
+    "revision": "b95f526b24ed4b9b54d0c204ea2d3c85",
+    "url": "/Cocolatte/static/media/Foto 14.b95f526b.jpg"
   },
   {
     "revision": "759ea19bccf8a5ca50a58e474aced157",
@@ -124,16 +124,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Cocolatte/static/media/OpenSans-SemiBoldItalic.da6f476d.woff2"
   },
   {
-    "revision": "52121ffff57828c8f68c41a27fb5e283",
-    "url": "/Cocolatte/static/media/coffeNew.52121fff.jfif"
-  },
-  {
     "revision": "2120841c8d6898af11c0f89bb4c5aa56",
     "url": "/Cocolatte/static/media/coffee-cup.2120841c.png"
   },
   {
     "revision": "db72a6e6f11bb232522b4c33a4c45901",
     "url": "/Cocolatte/static/media/coffeeGrain-Blur.db72a6e6.jpg"
+  },
+  {
+    "revision": "85ab9fcbd7c75bd4c190691013524819",
+    "url": "/Cocolatte/static/media/credit.85ab9fcb.png"
   },
   {
     "revision": "03783c5172ee1ad128c576bf88fac168",
