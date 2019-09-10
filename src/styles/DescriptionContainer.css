@@ -48,10 +48,9 @@
       font-size:0.5em;
     }
   }
-  a:link, a:visited, a:hover, a:active{
-    color:#88A200;
-  }
-
+.contact_link, .contact_link:hover, .contact_link:visited{
+  color:#88A200;
+}
 
   
   

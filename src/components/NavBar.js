@@ -77,7 +77,7 @@ class NavBar extends Component {
           <Link to="LandingSection" smooth={true} duration={250} className={this.state.classNameLinkIncio}>Inicio</Link>
           <Link to="historySection" smooth={true} duration={250} className={this.state.classNameLinkHistory}>Nosotros</Link>
           <Link to="historySection" smooth={true} duration={250} className="nav-item__Link">Productos</Link>
-          <Link to="historySection" smooth={true} duration={250} className="nav-item__Link">Suscripciones</Link>
+          <Link to="suscriptionSection" smooth={true} duration={250} className="nav-item__Link">Suscripciones</Link>
           <Link to="historySection" smooth={true} duration={250} className="nav-item__Link">Línea Institucional</Link>
           <Link to="ContactSection" smooth={true} duration={250} className={this.state.classNameLinkContact}>Contáctanos</Link>
         </ul>

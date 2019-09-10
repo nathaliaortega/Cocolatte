@@ -1,0 +1,31 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+.suscriptionSection {
+    text-align: center;
+    padding:40px 40px;
+    background-color: #FBF7F4;
+}
+
+.suscription__title {
+    font-size: 2.2em;
+    color: #55382A;
+}
+
+@media only screen and (min-width:992px) {
+    .suscription__title {
+        font-size: 3em;
+    }
+    .suscription__description {
+        font-size: 1.5em;
+    }
+}
+
+.suscription__card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: .5rem;
+    justify-items: center;
+    width: 100%;
+}
