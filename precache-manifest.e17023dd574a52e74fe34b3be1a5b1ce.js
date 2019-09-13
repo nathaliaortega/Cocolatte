@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "56f6261c999dab9aaeaa9386d98dea92",
+    "revision": "544cb0f94b05b1476fbfb11464622b9a",
     "url": "/Cocolatte/index.html"
   },
   {
-    "revision": "d10edf4d934d0cf2197b",
-    "url": "/Cocolatte/static/css/main.16ad9f37.chunk.css"
+    "revision": "dba1aa23f31490637689",
+    "url": "/Cocolatte/static/css/main.ead0d1d8.chunk.css"
   },
   {
-    "revision": "ad39cf20956307447678",
-    "url": "/Cocolatte/static/js/2.ea91d862.chunk.js"
+    "revision": "578108ef1d338262e728",
+    "url": "/Cocolatte/static/js/2.a2b4fc16.chunk.js"
   },
   {
-    "revision": "d10edf4d934d0cf2197b",
-    "url": "/Cocolatte/static/js/main.a8bbd078.chunk.js"
+    "revision": "dba1aa23f31490637689",
+    "url": "/Cocolatte/static/js/main.a2895365.chunk.js"
   },
   {
     "revision": "ac364bed3bcff7943ccc",
@@ -124,6 +124,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Cocolatte/static/media/OpenSans-SemiBoldItalic.da6f476d.woff2"
   },
   {
+    "revision": "5386eaecd5146e4a2eb1443b0c3d671d",
+    "url": "/Cocolatte/static/media/catering.5386eaec.jpg"
+  },
+  {
     "revision": "2120841c8d6898af11c0f89bb4c5aa56",
     "url": "/Cocolatte/static/media/coffee-cup.2120841c.png"
   },
@@ -134,6 +138,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "85ab9fcbd7c75bd4c190691013524819",
     "url": "/Cocolatte/static/media/credit.85ab9fcb.png"
+  },
+  {
+    "revision": "3d7af9c471ca67dcf507da43c895bb14",
+    "url": "/Cocolatte/static/media/empresa.3d7af9c4.jpg"
   },
   {
     "revision": "03783c5172ee1ad128c576bf88fac168",
