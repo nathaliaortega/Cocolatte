@@ -4,42 +4,50 @@
   box-sizing:border-box;
 }
 .suscription__card {
-    position: relative;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    width: 15em;
-    min-height: 10em;
-    max-height: 100%;
-    border-radius: 10px;
-    padding:15px;
-    margin: 10px 10px;    
-  }
+  position: relative;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 15.5em;
+  min-height: 10em;
+  max-height: 100%;
+  border-radius: 10px;
+  padding:15px 15px 25px 15px;
+  margin: 10px 5px 10px 5px;    
+  font-size: 1.2em;
+}
+.suscription__card-title{
+  font-size:2em;
+}
 
-  @media only screen and (max-width: 800px) {
-    
-    .content__header{
-      font-size:0.5em;
-    }
+@media only screen and (max-width: 800px) {
+  
+  .suscription__card-title{
+    font-size:3em;
   }
-  .card__months{
-      color:white;
-      width: 100%;
-      padding:5px;
-      margin-bottom:5px;
+  .suscription__card {
       
+    font-size: 1em;
   }
-  .card__months p{
-      margin:0 auto;
 }
-.card__description{
-    padding:3%;
+.suscription__card__months{
+  color:white;
+  width: 100%;
+  padding:5px;
+  margin-bottom:5px;
+    
 }
-.card__link, .card__link:visited, .card__link:hover {
-    color:white;
-    border-radius: 10px;
-    padding:5px;
-    text-decoration: none;
+.suscription__card__months p{
+  margin:0 auto;
+}
+.suscription__card__description{
+  padding:3%;
+}
+.suscription__card__link, .suscription__card__link:visited, .suscription__card__link:hover {
+  color:white;
+  border-radius: 10px;
+  padding:5px;
+  text-decoration: none;
 }
 
 

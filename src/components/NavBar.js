@@ -11,8 +11,9 @@ class NavBar extends Component {
     className: 'nav-bar',
     classNameLinkIncio: 'nav-item__Link',
     classNameLinkHistory: 'nav-item__Link',
-    classNameLinkContact: 'nav-item__Link',
-
+    classNameLinkSuscription: 'nav-item__Link',
+    classNameLinkInstitutional: 'nav-item__Link',    
+    classNameLinkContact: 'nav-item__Link'
   };
 
   listenScrollEvent = e => {
@@ -21,12 +22,30 @@ class NavBar extends Component {
       if (window.scrollY > 1000) {
         this.setState({ classNameLinkIncio: 'nav-item__Link' });
         this.setState({ classNameLinkHistory: 'nav-item__Link nav-item__Link-color' });
+        this.setState({ classNameLinkSuscription: 'nav-item__Link' });
+        this.setState({ classNameLinkInstitutional: 'nav-item__Link' });
         this.setState({ classNameLinkContact: 'nav-item__Link' });
       }
-      if (window.scrollY > 1480) {
+      if (window.scrollY > 1530) {
+        this.setState({ classNameLinkIncio: 'nav-item__Link' });
+        this.setState({ classNameLinkSuscription: 'nav-item__Link nav-item__Link-color' });
+        this.setState({ classNameLinkHistory: 'nav-item__Link' });
+        this.setState({ classNameLinkContact: 'nav-item__Link' });
+        this.setState({ classNameLinkInstitutional: 'nav-item__Link' });
+      }
+      if (window.scrollY > 2220) {
+        this.setState({ classNameLinkIncio: 'nav-item__Link' });
+        this.setState({ classNameLinkInstitutional: 'nav-item__Link nav-item__Link-color' });
+        this.setState({ classNameLinkHistory: 'nav-item__Link' });
+        this.setState({ classNameLinkSuscription: 'nav-item__Link' });
+        this.setState({ classNameLinkContact: 'nav-item__Link' });
+      }
+      if (window.scrollY > 3120) {
         this.setState({ classNameLinkIncio: 'nav-item__Link' });
         this.setState({ classNameLinkContact: 'nav-item__Link nav-item__Link-color' });
         this.setState({ classNameLinkHistory: 'nav-item__Link' });
+        this.setState({ classNameLinkSuscription: 'nav-item__Link' });
+        this.setState({ classNameLinkInstitutional: 'nav-item__Link' });
       }
     }
     else {
@@ -34,6 +53,8 @@ class NavBar extends Component {
       this.setState({ classNameLinkIncio: 'nav-item__Link nav-item__Link-color' });
       this.setState({ classNameLinkHistory: 'nav-item__Link' });
       this.setState({ classNameLinkContact: 'nav-item__Link' });
+      this.setState({ classNameLinkSuscription: 'nav-item__Link' });
+        this.setState({ classNameLinkInstitutional: 'nav-item__Link' });
     }
   }
 
@@ -77,8 +98,8 @@ class NavBar extends Component {
           <Link to="LandingSection" smooth={true} duration={250} className={this.state.classNameLinkIncio}>Inicio</Link>
           <Link to="historySection" smooth={true} duration={250} className={this.state.classNameLinkHistory}>Nosotros</Link>
           <Link to="historySection" smooth={true} duration={250} className="nav-item__Link">Productos</Link>
-          <Link to="suscriptionSection" smooth={true} duration={250} className="nav-item__Link">Suscripciones</Link>
-          <Link to="historySection" smooth={true} duration={250} className="nav-item__Link">Línea Institucional</Link>
+          <Link to="suscriptionSection" smooth={true} duration={250} className={this.state.classNameLinkSuscription}>Suscripciones</Link>
+          <Link to="instituionalSection" smooth={true} duration={250} className={this.state.classNameLinkInstitutional}>Línea Institucional</Link>
           <Link to="ContactSection" smooth={true} duration={250} className={this.state.classNameLinkContact}>Contáctanos</Link>
         </ul>
       </nav>

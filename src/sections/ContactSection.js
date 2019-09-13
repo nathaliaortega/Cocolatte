@@ -9,7 +9,7 @@ class ContactSection extends Component {
             <div className="ContactSection" id="ContactSection">
                 <p className="contact__title"><b>Contáctanos</b></p>
                 <div className="card-container">
-                    <DescriptionContainer srcImage={wpp} title="WhatsApp: 3176420450" link="https://api.whatsapp.com/send?phone=573176420450" />
+                    <DescriptionContainer srcImage={wpp} title="WhatsApp: 3176420450" link="https://api.whatsapp.com/send?phone=573176420450&amp;text=Hola Cocolatte, te vi en la página web: " />
                     <DescriptionContainer srcImage={instagram} title="Instagram: @cocolattecafe" link="https://www.instagram.com/cocolattecafe/" />
                 </div>
                 
