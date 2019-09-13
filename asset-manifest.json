@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Cocolatte/static/css/main.2bb1cc0a.chunk.css",
+    "main.css": "/Cocolatte/static/css/main.302e57f2.chunk.css",
     "main.js": "/Cocolatte/static/js/main.a2895365.chunk.js",
     "main.js.map": "/Cocolatte/static/js/main.a2895365.chunk.js.map",
     "runtime~main.js": "/Cocolatte/static/js/runtime~main.ac6e9a51.js",
@@ -8,9 +8,9 @@
     "static/js/2.a2b4fc16.chunk.js": "/Cocolatte/static/js/2.a2b4fc16.chunk.js",
     "static/js/2.a2b4fc16.chunk.js.map": "/Cocolatte/static/js/2.a2b4fc16.chunk.js.map",
     "index.html": "/Cocolatte/index.html",
-    "precache-manifest.0364c2d8b16a155ac8ecca0cfb227950.js": "/Cocolatte/precache-manifest.0364c2d8b16a155ac8ecca0cfb227950.js",
+    "precache-manifest.2ca6901a44ba79927d46b5fd10b0f875.js": "/Cocolatte/precache-manifest.2ca6901a44ba79927d46b5fd10b0f875.js",
     "service-worker.js": "/Cocolatte/service-worker.js",
-    "static/css/main.2bb1cc0a.chunk.css.map": "/Cocolatte/static/css/main.2bb1cc0a.chunk.css.map",
+    "static/css/main.302e57f2.chunk.css.map": "/Cocolatte/static/css/main.302e57f2.chunk.css.map",
     "static/media/stylesheetDance.css": "/Cocolatte/static/media/DancingScript-Regular.5bce2887.woff",
     "static/media/FondoTitulo.png": "/Cocolatte/static/media/FondoTitulo.bc7f696e.png",
     "static/media/LandingSection.css": "/Cocolatte/static/media/Foto 14.b95f526b.jpg",
