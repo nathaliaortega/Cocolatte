@@ -51,7 +51,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0 15px 0 15px;    
+    margin: 0 5% 0 5%;    
     padding: 5px 10px 5px 10px;
     align-items: center;
 }
@@ -64,7 +64,7 @@
     margin-bottom: 25px;
 }
 .institutional__card-text{
-    font-size: .9em;
+    font-size: 1em;
 }
 .institutional__card__link, .institutional__card__link:visited, .institutional__card__link:hover {
     color:white;
@@ -97,5 +97,27 @@
     .institutional__card__link, .institutional__card__link:visited, .institutional__card__link:hover {
         font-size: 1.2em;
         width:250px;
+      }
+}
+@media only screen and (max-width:512px) {
+    
+    .institutional__card-text{
+        font-size: .8em;
+    }
+    .institutional__card__link, .institutional__card__link:visited, .institutional__card__link:hover {
+        margin-top:0;
+      }
+}
+@media only screen and (max-width:400px) {
+    .institutional__card-title{
+        font-size:1em;
+    }
+    .institutional__card-description{
+        
+        margin: 0 1% 0 1%; 
+    }
+    .institutional__card__link, .institutional__card__link:visited, .institutional__card__link:hover {
+        font-size:.72em;
+        width:100px;
       }
 }
