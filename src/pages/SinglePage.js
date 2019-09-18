@@ -10,10 +10,12 @@ import SuscriptionSection from '../sections/SuscriptionSection';
 import InstitutionalSection from '../sections/InstitutionalSection';
 import CoffeBack from '../resources/coffeeGrain-Blur.jpg'
 import '../resources/fontawesome-free-5.9.0-web/css/all.min.css'
+import NavBar from '../components/NavBar'
 function SinglePage(){
    
     return(
         <>
+            <NavBar/>
             <LandingSection srcImage={Background}/>
             <FeatureSection/>
             <HistorySection srcImage={CoffeBack}/>

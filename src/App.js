@@ -1,21 +1,20 @@
 import React, { Component } from 'react';
-
-import logo from './logo.svg';
 import './App.css';
-import NavBar from './components/NavBar'
 import './resources/fonts/stylesheet.css';
 import './resources/fonts/stylesheetDance.css';
 import './resources/animate.css';
 
 import { HashRouter, Route, Switch, Redirect } from 'react-router-dom';
 import SinglePage from './pages/SinglePage';
+import CateringPage from './pages/CateringPage';
+
 
 class App extends Component {
   
   render(){
     return (
       <HashRouter>
-        <NavBar/>
+        
         <div className="main">
         <Switch>
             <Route exact path="/"
@@ -24,10 +23,10 @@ class App extends Component {
               )}
             />
             <Route exact path="/inicio" component={SinglePage} />
-            
+            <Route exact path="/catering" component={CateringPage} />            
           </Switch>
           <div className="footer">
-            Copyright © 2019 Coclatte. All Rights Reserved.
+            Copyright © 2019 Cocolatte. All Rights Reserved.
           </div>
         </div>
       </HashRouter>
