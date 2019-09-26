@@ -19,7 +19,6 @@ class NavBar extends Component {
 
   listenScrollEvent = e => {
     if (this.mounted) {
-      console.log(window.scrollY);
       
       if (window.scrollY > 180) {
         this.setState({ className: "nav-bar nav-bar-color" });
