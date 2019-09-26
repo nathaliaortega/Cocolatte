@@ -41,7 +41,7 @@ class NavBar extends Component {
           this.setState({ classNameLinkContact: "nav-item__Link" });
           this.setState({ classNameLinkInstitutional: "nav-item__Link" });
         }
-        if (window.scrollY > 2400) {
+        if (window.scrollY > 2600) {
           this.setState({ classNameLinkIncio: "nav-item__Link" });
           this.setState({
             classNameLinkInstitutional: "nav-item__Link nav-item__Link-color"
@@ -50,7 +50,7 @@ class NavBar extends Component {
           this.setState({ classNameLinkSuscription: "nav-item__Link" });
           this.setState({ classNameLinkContact: "nav-item__Link" });
         }
-        if (window.scrollY > 2800) {
+        if (window.scrollY > 3100) {
           this.setState({ classNameLinkIncio: "nav-item__Link" });
           this.setState({
             classNameLinkContact: "nav-item__Link nav-item__Link-color"
