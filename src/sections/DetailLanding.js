@@ -11,7 +11,7 @@ const DetailLanding = ({mail,firstSlide,secondSlide,thirdSlide, title,
       <NavBarDetail/>
       <div className="detailLanding__header">
         <h2 className="header__title">{title}</h2>
-        <a className="header__link" href={mail}>Consíguelo Aquí</a>
+        <a className="header__link" href={mail}><b>Consíguelo Aquí</b></a>
       </div>
       
         <Carousel className="detailLanding__carousel">
