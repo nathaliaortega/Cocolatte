@@ -12,7 +12,7 @@
     font-size: 2.2em;
     color: white;
     position: absolute;
-    z-index:10;
+    z-index:9;
     margin:60px 0 20px 0px;
     padding:0px 20px 0 20px;
     align-self: auto;
@@ -38,21 +38,26 @@
 
 }
 #card-organization{
-    background-image: url("../resources/empresa.jpg");
-    
+    background-image: url("../resources/empresa.jpg");    
+}
+#card-organization .institutional--info{
+    padding-bottom:0;
+    margin-bottom:0;    
 }
 #card-catering{
     background-image: url("../resources/catering.jpg");
-    
+}
+#card-catering .institutional__card-title{
+        padding-top:15px;
 }
 .institutional__card-description{
     background-color: rgba(0,0,0,0.75);
-    height:300px;
+    height:320px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 0 5% 0 5%;    
-    padding: 5px 10px 5px 10px;
+    padding: 5px 10px 15px 10px;
     align-items: center;
     border-radius: 10px;
 }
@@ -67,7 +72,7 @@
 .institutional__card-text{
     font-size: 1em;
 }
-.institutional__card__link, .institutional__card__link:visited, .institutional__card__link:hover {
+.institutional__card__link, .institutional__card__link:visited {
     color:white;
     border-radius: 10px;
     padding:5px;
@@ -75,7 +80,27 @@
     background-color: #01B5B7;
     margin-top:20px;
     width:150px;
-  }
+}
+.institutional__card__link:hover{
+    color:#01B5B7;
+    background-color: white;
+    margin-top:20px;
+    width:150px;
+    border-radius: 10px;
+    padding:5px;
+    text-decoration: none;
+}
+
+.institutional--info, .institutional--info:active{
+    color:white;
+    text-decoration: underline;
+    padding:10px;
+}
+.institutional--info:hover{
+    color:#E58900;
+    text-decoration: underline;
+    padding:10px;
+}
 @media only screen and (min-width:892px) {
     .instituional__title {
         font-size: 3em;

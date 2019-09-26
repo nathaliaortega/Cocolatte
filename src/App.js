@@ -1,29 +1,29 @@
-import React, { Component } from 'react';
-import './App.css';
-import './resources/fonts/stylesheet.css';
-import './resources/fonts/stylesheetDance.css';
-import './resources/animate.css';
+import React, { Component } from "react";
+import "./App.css";
+import "./resources/fonts/stylesheet.css";
+import "./resources/fonts/stylesheetDance.css";
+import "./resources/animate.css";
 
-import { HashRouter, Route, Switch, Redirect } from 'react-router-dom';
-import SinglePage from './pages/SinglePage';
-import CateringPage from './pages/CateringPage';
-
+import { HashRouter, Route, Switch, Redirect } from "react-router-dom";
+import SinglePage from "./pages/SinglePage";
+import CateringPage from "./pages/CateringPage";
+import InstCoffeePage from "./pages/InstCoffe";
 
 class App extends Component {
-  
-  render(){
+  render() {
     return (
       <HashRouter>
-        
         <div className="main">
-        <Switch>
-            <Route exact path="/"
-              render={() => (
-                <Redirect to="/inicio" />
-              )}
-            />
+        
+          <Switch>
+            <Route exact path="/" render={() => <Redirect to="/inicio" />} />
             <Route exact path="/inicio" component={SinglePage} />
-            <Route exact path="/catering" component={CateringPage} />            
+            <Route exact path="/catering" component={CateringPage} />
+            <Route
+              exact
+              path="/cafe-Institucional"
+              component={InstCoffeePage}
+            />
           </Switch>
           <div className="footer">
             Copyright © 2019 Cocolatte. All Rights Reserved.
@@ -31,9 +31,7 @@ class App extends Component {
         </div>
       </HashRouter>
     );
-
   }
-  
 }
 
 export default App;

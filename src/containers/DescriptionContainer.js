@@ -5,7 +5,7 @@ import '../styles/DescriptionContainer.css'
 const DescriptionContainer = ({ srcImage, title,link }) => {
 
     return(
-        <a className="contact_link" href={link} target="_blank"><div className = "card" >
+        <a className="contact_link" href={link}><div className = "card" >
             <div className="card__thumb">
                 <img src={srcImage} rel="noopener noreferrer" alt="Profile" />
             </div>

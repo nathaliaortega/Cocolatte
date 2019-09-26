@@ -14,8 +14,8 @@ import NavBar from '../components/NavBar'
 function SinglePage(){
    
     return(
-        <>
-            <NavBar/>
+        <>           
+            <NavBar institutional="false"/>
             <LandingSection srcImage={Background}/>
             <FeatureSection/>
             <HistorySection srcImage={CoffeBack}/>

@@ -1,0 +1,36 @@
+*,
+*:before,
+*:after{
+  box-sizing:border-box;
+}
+.nav-bar-detail {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    background-COLOR:  white;
+    width: 100%;
+    top: 0;
+    overflow: hidden;
+    z-index: 10;
+    position: fixed;
+}
+.detail-logo{
+    float:left;
+    width:100%;
+}
+@media only screen and (max-width: 895px) {
+    .detail-logo
+    {
+        width:auto;
+        height: 100%;
+    }
+    
+}
+
+@media only screen and (min-width: 278px) and (max-width: 430px) {
+    .detail-logo
+    {
+        width:75%;
+        height: auto;
+    }
+} 

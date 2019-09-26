@@ -13,6 +13,8 @@ class InstitutionalSection extends Component {
                             <p className="institutional__card-text">Nosotros te ayudamos a que en tu empresa disfruten al tomar un café fresco, de la mejor 
                             calidad, que rinde mucho más y a un buen precio.</p>
                             <a className="institutional__card__link" href="mailto:cocolattecafe@gmail.com?subject=Cotización%20café%20para%20empresas"><b>Consíguelo Aquí</b></a>
+                            <Link className="institutional--info" to={"/cafe-Institucional"}>Más Información</Link>
+
                         </div>
                     </div>
                     <div className="institutional__card" id="card-catering">
@@ -21,7 +23,7 @@ class InstitutionalSection extends Component {
                             <p className="institutional__card-text">Atendemos tus eventos. Para cualquier cantidad de personas.
                             Nos acomodamos a tu presupuesto. Te aseguramos calidad, puntualidad y buen servicio.</p>
                             <a className="institutional__card__link" href="mailto:cocolattecafe@gmail.com?subject=Cotización%20Catering"><b>Consíguelo Aquí</b></a>
-                            <Link to={"/catering"}>Más Información</Link>
+                            <Link className="institutional--info" to={"/catering"}>Más Información</Link>
                         </div>
                     </div>
                 </div>

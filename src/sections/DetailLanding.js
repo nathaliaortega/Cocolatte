@@ -1,18 +1,20 @@
 import React from "react";
 import "../styles/DetailLanding.css";
 import Carousel from "react-bootstrap/Carousel";
+import NavBarDetail from '../components/NavBarDetail'
 
-const DetailLanding = ({firstSlide,secondSlide,thirdSlide, title, 
+const DetailLanding = ({mail,firstSlide,secondSlide,thirdSlide, title, 
     titleFirstSlide, titleSecondSlide, titleThirdSlide, 
     descriptionFirst, descriptionSecond,descriptionThird}) => {
-      console.log(firstSlide);
       return (
-    <div className="DetailLanding">
-      <div className="DetailLanding__header">
+    <div className="detailLanding">
+      <NavBarDetail/>
+      <div className="detailLanding__header">
         <h2 className="header__title">{title}</h2>
+        <a className="header__link" href={mail}>Consíguelo Aquí</a>
       </div>
       
-        <Carousel className="DetailLanding__carousel">
+        <Carousel className="detailLanding__carousel">
           <Carousel.Item className="detail__carousel-item">
             <img
               className="d-block w-100 detail_img"
@@ -26,7 +28,7 @@ const DetailLanding = ({firstSlide,secondSlide,thirdSlide, title,
           </Carousel.Item >
           <Carousel.Item className="detail__carousel-item">
             <img
-              className="d-block w-100"
+              className="d-block w-100 detail_img"
               src={secondSlide}
               alt="Third slide"
             />
@@ -38,14 +40,15 @@ const DetailLanding = ({firstSlide,secondSlide,thirdSlide, title,
           </Carousel.Item>
           <Carousel.Item className="detail__carousel-item">
             <img
-              className="d-block w-100"
+              className="d-block w-100 detail_img"
               src={thirdSlide}
               alt="Third slide"
             />
 
             <Carousel.Caption className="detailLanding__carousel-caption">
               <h3>{titleThirdSlide}</h3>
-              <p>{descriptionThird}</p>
+              <p>{descriptionThird} <a href="http://mx.trabajando.com/contenido/noticia/12057/tomar-cafe-en-el-trabajo-causa-efectos-positivos.html">1</a></p>
+              
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>

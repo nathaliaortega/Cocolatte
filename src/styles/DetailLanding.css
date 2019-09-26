@@ -1,56 +1,101 @@
 *, *:before, *:after {
     box-sizing: border-box;
 }
-.DetailLanding {
+.detailLanding {
     width: 100%;     
    
 }
-.header__title{
-    background-COLOR:  rgba(85,56,42,1);
+.detailLanding__header{
+    background-color: #55382A;    
     width: 100%;
-    padding-left:10px;  
-    padding-top:75px;    
-    padding-bottom:10px;
+    padding-left:10px;     
+    padding-bottom:15px; 
+    display:flex;
+    margin-top:55px;
+    padding-top:10px;
+}
+.header__title{    
     color:white;
     font-weight: 600;
-    margin:0 !important;
+    margin:0;
+    font-size:1.8em;
+    justify-self: flex-start;   
 }
-.DetailLanding__carousel{
+.header__link, .header__link:active{
+    margin-left:5%;
+    color:white;
+    border-radius: 10px;
+    padding:5px;
+    text-decoration: none;
+    background-color: #01B5B7;
+    max-height: 30px;
+}
+.header__link:hover{
+    margin-left:5%;
+    color:#01B5B7;
+    border-radius: 10px;
+    padding:5px;
+    text-decoration: none;
+    background-color: white;
+}
+.detailLanding__carousel{
     display:flex;
     justify-content: center;
     flex-direction: column;
+    background-image: url("../resources/coffeeGrain-Blur.jpg");
+    background-position: center;
+    background-size: cover;  
+    width:100%;
+    height: 100vh;
 }
 .detailLanding__carousel-caption{ 
-    background-color: rgba(0,0,0,0.75) !important;
+    background-color: rgba(0,0,0,0.75);
+    padding: 5px;
     border-radius: 10px;
     font-size:1.2em;
+    margin-bottom:2%;
 }
 .detail__carousel-item{
-    color: white;
-    height: 100vh;
-    justify-content: center; 
-    padding: 25px 10% 0 10%;
+    color: white;    
+    align-content: center;    
+}
+.detail_img{    
+    padding: 0% 10% 5% 10%;
+}
+.detailLanding__carousel-caption a{ 
+    font-size:.5em;
+    color:white;
 }
 
-.detail_img{    
-    width:auto;
-}
-@media only screen and (min-width: 278px) and (max-width: 430px) {
+@media only screen and (min-width: 278px) and (max-width: 500px) {
     
-    .DetailLanding__header{
-        height: 60px;
-    }
     .header__title{
-        font-size:.9em;
-        padding-top:40px;
+        font-size:1.5em;
     }
     .detailLanding__carousel-caption h3{ 
         font-size:1.2em;
     }
     .detailLanding__carousel-caption p{ 
         font-size:.7em;
+    }    
+    .detail_img{
+        padding: 0% 0% 10% 0%;
+    }
+    .header__link{
+        font-size:.9em;
+    }
+    
+}
+@media only screen and (min-width:690px){
+    .detail_img{    
+        padding: 0% 20% 0% 20%;
+    }
+    .header__link{
+        font-size:.9em;
     }
 }
-@media only screen and (min-width: 1000px){
-    
+@media only screen and (min-width: 1050px){
+    .detail_img{    
+        padding: 0% 30% 0% 30%;
+    }
 }
