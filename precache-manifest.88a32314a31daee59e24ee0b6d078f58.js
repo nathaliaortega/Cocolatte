@@ -1,23 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "44b8b8ec4811161e7e19c9d81982aa74",
+    "revision": "732f4ed78eada3fa9ef24f2a1166af64",
     "url": "/Cocolatte/index.html"
   },
   {
-    "revision": "d580b6273aae8bcaeb4c",
-    "url": "/Cocolatte/static/css/main.1c502111.chunk.css"
+    "revision": "4d94b8fdf4a73a83c58f",
+    "url": "/Cocolatte/static/css/main.dca1e661.chunk.css"
   },
   {
-    "revision": "578108ef1d338262e728",
-    "url": "/Cocolatte/static/js/2.a2b4fc16.chunk.js"
+    "revision": "ef835aa2888f1e6740d3",
+    "url": "/Cocolatte/static/js/2.891e2184.chunk.js"
   },
   {
-    "revision": "d580b6273aae8bcaeb4c",
-    "url": "/Cocolatte/static/js/main.a2895365.chunk.js"
+    "revision": "4d94b8fdf4a73a83c58f",
+    "url": "/Cocolatte/static/js/main.1c3c61ca.chunk.js"
   },
   {
     "revision": "ac364bed3bcff7943ccc",
     "url": "/Cocolatte/static/js/runtime~main.ac6e9a51.js"
+  },
+  {
+    "revision": "f34f767894105e5c1d4fa0c773642bef",
+    "url": "/Cocolatte/static/media/BolsasCafe.f34f7678.jpeg"
+  },
+  {
+    "revision": "1c24867a481d9e927114d51fff821319",
+    "url": "/Cocolatte/static/media/Comida.1c24867a.jpeg"
   },
   {
     "revision": "01333697553f39c92c487ca739bb62d4",
@@ -42,6 +50,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b95f526b24ed4b9b54d0c204ea2d3c85",
     "url": "/Cocolatte/static/media/Foto 14.b95f526b.jpg"
+  },
+  {
+    "revision": "51f4c0ae266bedaf1e33c88048c0231f",
+    "url": "/Cocolatte/static/media/LinaFiltros.51f4c0ae.jpeg"
   },
   {
     "revision": "759ea19bccf8a5ca50a58e474aced157",
@@ -124,6 +136,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Cocolatte/static/media/OpenSans-SemiBoldItalic.da6f476d.woff2"
   },
   {
+    "revision": "fd9193c2e02159ffb33383cfd8afa7fd",
+    "url": "/Cocolatte/static/media/Servir.fd9193c2.jpeg"
+  },
+  {
+    "revision": "44c62ee7f8d456d896e895aa11278e7a",
+    "url": "/Cocolatte/static/media/SirviendoRiendo.44c62ee7.jpeg"
+  },
+  {
     "revision": "5386eaecd5146e4a2eb1443b0c3d671d",
     "url": "/Cocolatte/static/media/catering.5386eaec.jpg"
   },
@@ -204,12 +224,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Cocolatte/static/media/fa-solid-900.ef3df984.eot"
   },
   {
-    "revision": "4a8c23476a7c20c5bee2a752a6f96e9e",
-    "url": "/Cocolatte/static/media/instagram.4a8c2347.png"
+    "revision": "34590cbaedf252e340b4d8d0408ce45a",
+    "url": "/Cocolatte/static/media/fila.34590cba.jpeg"
   },
   {
-    "revision": "5d5d9eefa31e5e13a6610d9fa7a283bb",
-    "url": "/Cocolatte/static/media/logo.5d5d9eef.svg"
+    "revision": "4a8c23476a7c20c5bee2a752a6f96e9e",
+    "url": "/Cocolatte/static/media/instagram.4a8c2347.png"
   },
   {
     "revision": "0c7a04985e6698d82b925f4d61ae6191",
