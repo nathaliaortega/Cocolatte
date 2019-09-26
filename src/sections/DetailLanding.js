@@ -5,16 +5,17 @@ import Carousel from "react-bootstrap/Carousel";
 const DetailLanding = ({firstSlide,secondSlide,thirdSlide, title, 
     titleFirstSlide, titleSecondSlide, titleThirdSlide, 
     descriptionFirst, descriptionSecond,descriptionThird}) => {
-  return (
+      console.log(firstSlide);
+      return (
     <div className="DetailLanding">
       <div className="DetailLanding__header">
-        <h1 className="header__title">{title}</h1>
+        <h2 className="header__title">{title}</h2>
       </div>
       
         <Carousel className="DetailLanding__carousel">
-          <Carousel.Item >
+          <Carousel.Item className="detail__carousel-item">
             <img
-              className="d-block w-100"
+              className="d-block w-100 detail_img"
               src={firstSlide}
               alt="First slide"
             />
@@ -22,8 +23,8 @@ const DetailLanding = ({firstSlide,secondSlide,thirdSlide, title,
               <h3>{titleFirstSlide}</h3>
               <p>{descriptionFirst}</p>
             </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item >
+          </Carousel.Item >
+          <Carousel.Item className="detail__carousel-item">
             <img
               className="d-block w-100"
               src={secondSlide}
@@ -35,7 +36,7 @@ const DetailLanding = ({firstSlide,secondSlide,thirdSlide, title,
               <p>{descriptionSecond}</p>
             </Carousel.Caption>
           </Carousel.Item>
-          <Carousel.Item>
+          <Carousel.Item className="detail__carousel-item">
             <img
               className="d-block w-100"
               src={thirdSlide}

@@ -2,12 +2,13 @@
 import React from 'react';
 import NavBarDetail from '../components/NavBarDetail'
 import DetailLanding from '../sections/DetailLanding'
+import fila from '../resources/Institucional/fila.jpeg'
 function CateringPage(){
    
     return(
         <>
             <NavBarDetail/>
-            <DetailLanding title="Catering" firstSlide="" secondSlide="" thirdSlide=""
+            <DetailLanding title="Catering" firstSlide={fila} secondSlide="" thirdSlide=""
             titleFirstSlide="Calidad-Precio" descriptionFirst="Nos acomodamos a tu 
             presupuesto, siempre garantizando la mejor calidad" titleSecondSlide="Puntualidad"
             descriptionSecond="Sabemos que en tus eventos quieres que todo salga perfecto, por

@@ -2,40 +2,55 @@
     box-sizing: border-box;
 }
 .DetailLanding {
-    width: 100%;    
-
-}
-.DetailLanding__header{
-    background-COLOR:  rgba(85,56,42,1);
-    width: 100%;
-    height: 80px;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left:20px;  
+    width: 100%;     
+   
 }
 .header__title{
+    background-COLOR:  rgba(85,56,42,1);
+    width: 100%;
+    padding-left:10px;  
+    padding-top:75px;    
+    padding-bottom:10px;
     color:white;
     font-weight: 600;
+    margin:0 !important;
 }
 .DetailLanding__carousel{
-    width:100%;
-    height: 100vh;
-    justify-content: center;
     display:flex;
+    justify-content: center;
     flex-direction: column;
 }
 .detailLanding__carousel-caption{ 
     background-color: rgba(0,0,0,0.75) !important;
+    border-radius: 10px;
+    font-size:1.2em;
+}
+.detail__carousel-item{
+    color: white;
+    height: 100vh;
+    justify-content: center; 
+    padding: 25px 10% 0 10%;
+}
+
+.detail_img{    
+    width:auto;
 }
 @media only screen and (min-width: 278px) and (max-width: 430px) {
-    .DetailLanding { 
-        padding-top:40px;    
-    }
+    
     .DetailLanding__header{
         height: 60px;
     }
     .header__title{
-        font-size: 1.8em;
+        font-size:.9em;
+        padding-top:40px;
     }
+    .detailLanding__carousel-caption h3{ 
+        font-size:1.2em;
+    }
+    .detailLanding__carousel-caption p{ 
+        font-size:.7em;
+    }
+}
+@media only screen and (min-width: 1000px){
+    
 }
