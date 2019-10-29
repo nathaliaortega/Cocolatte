@@ -1,0 +1,51 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+.productsSection {
+  width: 100%;
+  display: flex;
+  background-image: url("../resources/regalos.JPG");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+.products__card {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  height: 360px;
+}
+.products__card p {
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 0.2px solid white;
+  margin-bottom:20px;  
+}
+.products__card--link {
+  background-color: #01B5B7;
+  color:white;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left:70px;
+  font-size: 1.2em;
+
+}
+.products__title{
+    font-size: 2.2em;
+    color: white;
+    position: absolute;
+    z-index:9;
+    margin:-360px 0 20px 0px;
+    padding:10px 20px 10px 20px;
+    width: 100%;
+    background-color: rgba(0,0,0,0.4);
+    text-align: center;
+}

@@ -24,52 +24,50 @@ class NavBar extends Component {
         this.setState({ className: "nav-bar nav-bar-color" });
         if (window.scrollY > 1500) {
           this.setState({ classNameLinkIncio: "nav-item__Link" });
-          this.setState({
-            classNameLinkHistory: "nav-item__Link nav-item__Link-color"
-          });
-          this.setState({ classNameLinkSuscription: "nav-item__Link" });
-          this.setState({ classNameLinkInstitutional: "nav-item__Link" });
-          this.setState({ classNameLinkContact: "nav-item__Link" });
+         
         }
-        if (window.scrollY > 1800) {
-          this.setState({ classNameLinkIncio: "nav-item__Link" });
-          this.setState({
-            classNameLinkSuscription: "nav-item__Link nav-item__Link-color"
-          });
-          this.setState({ classNameLinkHistory: "nav-item__Link" });
-          this.setState({ classNameLinkContact: "nav-item__Link" });
-          this.setState({ classNameLinkInstitutional: "nav-item__Link" });
-        }
-        if (window.scrollY > 2600) {
-          this.setState({ classNameLinkIncio: "nav-item__Link" });
-          this.setState({
-            classNameLinkInstitutional: "nav-item__Link nav-item__Link-color"
-          });
-          this.setState({ classNameLinkHistory: "nav-item__Link" });
-          this.setState({ classNameLinkSuscription: "nav-item__Link" });
-          this.setState({ classNameLinkContact: "nav-item__Link" });
-        }
-        if (window.scrollY > 3100) {
-          this.setState({ classNameLinkIncio: "nav-item__Link" });
-          this.setState({
-            classNameLinkContact: "nav-item__Link nav-item__Link-color"
-          });
-          this.setState({ classNameLinkHistory: "nav-item__Link" });
-          this.setState({ classNameLinkSuscription: "nav-item__Link" });
-          this.setState({ classNameLinkInstitutional: "nav-item__Link" });
-        }
-      } else {
-        this.setState({ className: "nav-bar" });
-        this.setState({
-          classNameLinkIncio: "nav-item__Link nav-item__Link-color"
-        });
-        this.setState({ classNameLinkHistory: "nav-item__Link" });
-        this.setState({ classNameLinkContact: "nav-item__Link" });
-        this.setState({ classNameLinkSuscription: "nav-item__Link" });
-        this.setState({ classNameLinkInstitutional: "nav-item__Link" });
       }
     }
   };
+  //       if (window.scrollY > 1800) {
+  //         this.setState({ classNameLinkIncio: "nav-item__Link" });
+  //         this.setState({
+  //           classNameLinkSuscription: "nav-item__Link nav-item__Link-color"
+  //         });
+  //         this.setState({ classNameLinkHistory: "nav-item__Link" });
+  //         this.setState({ classNameLinkContact: "nav-item__Link" });
+  //         this.setState({ classNameLinkInstitutional: "nav-item__Link" });
+  //       }
+  //       if (window.scrollY > 2600) {
+  //         this.setState({ classNameLinkIncio: "nav-item__Link" });
+  //         this.setState({
+  //           classNameLinkInstitutional: "nav-item__Link nav-item__Link-color"
+  //         });
+  //         this.setState({ classNameLinkHistory: "nav-item__Link" });
+  //         this.setState({ classNameLinkSuscription: "nav-item__Link" });
+  //         this.setState({ classNameLinkContact: "nav-item__Link" });
+  //       }
+  //       if (window.scrollY > 3100) {
+  //         this.setState({ classNameLinkIncio: "nav-item__Link" });
+  //         this.setState({
+  //           classNameLinkContact: "nav-item__Link nav-item__Link-color"
+  //         });
+  //         this.setState({ classNameLinkHistory: "nav-item__Link" });
+  //         this.setState({ classNameLinkSuscription: "nav-item__Link" });
+  //         this.setState({ classNameLinkInstitutional: "nav-item__Link" });
+  //       }
+  //     } else {
+  //       this.setState({ className: "nav-bar" });
+  //       this.setState({
+  //         classNameLinkIncio: "nav-item__Link nav-item__Link-color"
+  //       });
+  //       this.setState({ classNameLinkHistory: "nav-item__Link" });
+  //       this.setState({ classNameLinkContact: "nav-item__Link" });
+  //       this.setState({ classNameLinkSuscription: "nav-item__Link" });
+  //       this.setState({ classNameLinkInstitutional: "nav-item__Link" });
+  //     }
+  //  }
+  //  };
 
   componentDidMount() {
     this.mounted = true;
@@ -123,13 +121,11 @@ class NavBar extends Component {
             Nosotros
           </Link>
           <Link
-            to="historySection"
+            to="productsSection"
             smooth={true}
             duration={250}
-            className="nav-item__Link"
-          >
-            Productos
-          </Link>
+            className={this.state.classNameLinkSuscription}
+          >Productos</Link>
           <Link
             to="suscriptionSection"
             smooth={true}
@@ -174,5 +170,4 @@ class NavBar extends Component {
 function refreshPage(){ 
   window.location.reload(); 
 }
-
 export default NavBar;
